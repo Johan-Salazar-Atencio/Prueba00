@@ -63,7 +63,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
 
                         // PUBLICAS
-                        .requestMatchers("/api/auth/**")
+                        .requestMatchers("/api/auth/**", "/api/test/all")
                         .permitAll()
 
                         // ADMIN
